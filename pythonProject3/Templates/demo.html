@@ -1,0 +1,12 @@
+{% extends "temp2/Modified_files/dashindex.html"%}
+
+
+
+
+{% block content %}
+ <form method="POST">
+                           {% csrf_token %}
+                            {{form}}
+                           <button type="submit">Add</button>
+                       </form>
+{% endblock %}
