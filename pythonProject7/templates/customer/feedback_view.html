@@ -1,0 +1,36 @@
+ {% extends "admin/admin_base.html" %}
+{%block content%}
+
+<div class="card text-center mb-3">
+  <div class="card-body">
+<div class="table-responsive">
+  <table class="table align-middle table table-bordered">
+
+  <thead>
+
+    <tr>
+
+      <th scope="col">User</th>
+      <th scope="col">Messege</th>
+      <th scope="col">Reply</th>
+      <th scope="col">Date</th>
+
+
+    </tr>
+  </thead>
+  <tbody>
+  {% for i in data %}
+    <tr>
+      <td scope="row">{{i.user}}</td>
+      <td scope="row">{{i.input}}</td>
+      <td scope="row">{{i.reply}}</td>
+      <td scope="row">{{i.date}}</td>
+    </tr>
+  </tbody>
+      {% endfor %}
+
+ </table>
+{% endblock %}
+</div>
+  </div>
+</div>
